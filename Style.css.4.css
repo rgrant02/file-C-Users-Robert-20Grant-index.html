@@ -1,0 +1,71 @@
+/* Styling the body */
+body {
+  background-color: #ffd902; /* Yellow background */
+  margin: 0 auto; /* Center the body content */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Default font family */
+}
+
+/* Styling paragraphs */
+p {
+  padding: 40px;
+  color: rgb(33, 133, 24); /* Green text */
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 0.3em; /* Spaced letters */
+}
+
+/* Styling headings (h1) */
+h1 {
+  padding: 20px;
+  color: rgb(219, 161, 226); /* Light purple color */
+  font-size: 28px;
+  text-align: center;
+  font-family: Arial, sans-serif; /* Arial font family */
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+/* Styling lists */
+ul, ol {
+  padding: 20px;
+  font-size: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Contextual selector for links inside paragraphs */
+p a {
+  color: #ff5733; /* Red color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Pseudo-classes for hyperlinks */
+a:hover {
+  color: #29a6ff; /* Blue color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+a:visited {
+  color: #6a4eae; /* Purple color for visited links */
+}
+
+a:active {
+  color: #e74c3c; /* Red color when clicked */
+}
+
+/* Attribute selector for input elements */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc; /* Light grey border */
+  font-size: 16px;
+  width: 200px;
+}
+
+/* Pseudo-element for adding content before paragraphs */
+p::before {
+  content: "🔹 "; /* Add an icon before each paragraph */
+  font-size: 20px;
+}

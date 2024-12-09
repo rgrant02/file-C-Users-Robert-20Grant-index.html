@@ -1,0 +1,97 @@
+
+b/* General body styles */
+body {
+  background-color: #a8f0c0; /* Light greenish background */
+  margin: 0 auto; /* Centered page */
+}
+
+/* Paragraph styles */
+p {
+  padding: 40px;
+  color: rgb(224, 58, 8); /* Orange color for text */
+  font-size: 28px;
+  text-align: center;
+  font-family: Arial;
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 0.3em; /* Spacing between letters */
+}
+
+/* Header (h1) styles */
+h1 {
+  padding: 20px;
+  color: rgb(212, 13, 235); /* Purple color for text */
+  font-size: 28px;
+  text-align: center;
+  font-family: Arial;
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 0.3em; /* Spacing between letters */
+}
+
+/* Styling for ordered list */
+ol {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  font-size: 22px;
+  font-family: Arial;
+  list-style-position: inside; /* Make list numbers inside the list */
+}
+
+/* Styling for unordered list */
+ul {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  font-size: 22px;
+  font-family: Arial;
+  list-style-type: square; /* Using square bullets */
+}
+
+/* Styling list items with specific selectors */
+li:nth-child(odd) {
+  background-color: #f1f1f1; /* Light grey for odd list items */
+}
+
+li:nth-child(even) {
+  background-color: #e0e0e0; /* Slightly darker grey for even list items */
+}
+
+/* Styling anchor links */
+a {
+  color: #007bff; /* Blue for normal links */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Pseudo-class for hover effect on links */
+a:hover {
+  color: #ff6347; /* Change color to tomato red on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Pseudo-class for visited links */
+a:visited {
+  color: #800080; /* Purple color for visited links */
+}
+
+/* Pseudo-class for active link */
+a:active {
+  color: #ff4500; /* Orange-red color for active links */
+}
+
+/* Pseudo-element to add a quote before the paragraph */
+p::before {
+  content: "🔶"; /* Adds a symbol before the paragraph */
+  margin-right: 10px;
+}
+
+/* Contextual Selector Example: All paragraphs inside div with class .container */
+.container p {
+  color: #008000; /* Green color for paragraphs inside .container */
+  font-style: italic; /* Italic style for paragraphs in container */
+}
+
+/* Attribute Selector Example: Select anchor tags with target="_blank" */
+a[target="_blank"] {
+  font-weight: bold; /* Bold text for links with target="_blank" */
+  color: #ff1493; /* Deep pink color for these links */
+}
